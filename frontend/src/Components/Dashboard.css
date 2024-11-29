@@ -1,0 +1,151 @@
+/* src/components/Dashboard.css */
+
+.dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between sections */
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between; /* Space out the title and logout button */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: left; /* Align the text to the left */
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between sections */
+}
+
+/* Personal details section */
+.personal-details-section {
+    background-color: #e9ecef; /* Light grey background for the section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    width: 100%; /* Full width */
+    max-width: 800px; /* Adjusted for better size */
+    margin: 0 auto; /* Centered horizontally */
+    text-align: center; /* Center align the content */
+}
+
+.personal-details-title {
+    font-size: 1.5rem;
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    border: 2px solid #0056b3; /* Border color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Ensure the background and border fit the text */
+    margin-bottom: 15px;
+}
+
+.personal-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjusted gap between form elements */
+    align-items: center; /* Center align the form elements */
+}
+
+.personal-details-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.personal-details-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px; /* Limit the width of inputs */
+}
+
+.personal-details-form button {
+    padding: 10px 20px; /* Adjusted size */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center align the button */
+}
+
+.personal-details-form button:hover {
+    background-color: #218838;
+}
+
+.personal-details-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Opportunities section */
+.opportunities-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Full width */
+    max-width: 800px; /* Adjusted for better size */
+    margin: 0 auto; /* Centered horizontally */
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center; /* Center align the section title */
+}
+
+.opportunities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between opportunity cards */
+}
+
+.opportunity-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Added transform transition */
+    /* Ensure cards are displayed with a z-index to overlap other content if needed */
+    z-index: 1;
+}
+
+.opportunity-card:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance box-shadow on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    z-index: 2; /* Bring the card to the front */
+}

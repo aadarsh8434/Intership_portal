@@ -1,0 +1,62 @@
+/* Navbar container */
+.navbar {
+  background-color: #2c3e50; /* Darker background color */
+  padding: 15px 30px; /* Increased spacing around the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+/* Navbar list styling */
+.navbar ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for alignment */
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Allow the list to take available space */
+  justify-content: center; /* Center align the list items */
+}
+
+/* Navbar list items styling */
+.navbar li {
+  margin: 0 20px; /* Spacing between items */
+}
+
+/* Navbar link styling */
+.navbar a {
+  color: #ecf0f1; /* Light color for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Increased font size for better readability */
+  font-weight: 500; /* Slightly bolder font weight */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  color: #3498db; /* Change color on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Active link styling */
+.navbar a.active {
+  font-weight: bold; /* Bold font for active link */
+  color: #3498db; /* Highlight color for active link */
+}
+
+/* Specific styles for Home and Dashboard */
+.navbar .home, .navbar .dashboard {
+  font-size: 20px; /* Larger font size for Home and Dashboard */
+  font-weight: 600; /* Slightly bolder font weight */
+  color: #ecf0f1; /* Ensure color matches the rest of the links */
+  border-bottom: 2px solid transparent; /* Add a border for active effect */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar .home:hover, .navbar .dashboard:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+.navbar .home.active, .navbar .dashboard.active {
+  color: #3498db; /* Highlight color for active link */
+  border-bottom: 2px solid #3498db; /* Border to indicate active link */
+}

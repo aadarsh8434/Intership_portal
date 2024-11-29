@@ -1,0 +1,114 @@
+/* Container for the signup form */
+.signup-container {
+    padding: 30px;
+    background-color: #ffffff; /* White background for a cleaner look */
+    max-width: 500px; /* Max width for the form */
+    margin: 50px auto; /* Center align the container with some margin from the top */
+    border-radius: 10px; /* More rounded corners for a modern look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+    border: 1px solid #e1e1e1; /* Light border to define the container */
+  }
+  
+  /* Title styling */
+  .signup-container h2 {
+    font-size: 28px;
+    color: #333; /* Dark text color */
+    text-align: center;
+    margin-bottom: 30px; /* More spacing below the title */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+  }
+  
+  /* Form styling */
+  .signup-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input styling */
+  .signup-container input {
+    margin-bottom: 20px; /* Increased spacing between inputs */
+    padding: 12px;
+    border: 1px solid #ccc; /* Slightly darker border */
+    border-radius: 8px; /* More rounded corners */
+    font-size: 16px;
+    width: 100%; /* Full width inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: #e8eef2; /* Light grey background for input fields */
+  }
+  
+  /* Label styling */
+  .signup-container label { 
+    font-size: 16px;
+    color: #555; /* Slightly lighter text color for labels */
+    margin-bottom: 5px; /* Space between label and input */
+    display: block; /* Ensure label takes up full width */
+  }
+  
+  /* Button styling */
+  .signup-container button {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width button */
+    margin-bottom: 15px; /* Space between buttons */
+  }
+  
+  /* Button hover effect */
+  .signup-container button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover for better visibility */
+  }
+  
+  /* Disabled button styling */
+  .signup-container button:disabled {
+    background-color: #ffffff; /* Grey background for disabled state */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+  }
+  
+  /* Error message styling */
+  .signup-container p {
+    color: #e74c3c; /* Red color for error messages */
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px; /* Slight overlap with form elements */
+    margin-bottom: 20px; /* Space below error message */
+  }
+  
+  /* Link styling for navigation buttons */
+  .signup-container .nav-button {
+    background: none;
+    border: none;
+    color: #3498db; /* Blue color for links */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+    width: 100%; /* Full width link */
+  }
+  
+  /* Hover effect for link */
+  .signup-container .nav-button:hover {
+    color: #fcfeff; /* Darker blue for links on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Styling for "Already have an account?" text and button */
+  .signup-container .account-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the text and button */
+    margin-top: 20px;
+  }
+  
+  .signup-container .account-info p {
+    margin-bottom: 10px; /* Spacing between text and button */
+    font-size: 16px;
+    color: #555; /* Slightly lighter text color */
+  }
+  

@@ -1,0 +1,67 @@
+/* Container for the whole component */
+.oppurtunities-container {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+  }
+  
+  /* Title styling */
+  .oppurtunities-container h1 {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Container for each oppurtunity card */
+  .oppurtunity-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    margin-bottom: 15px; /* Spacing between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+  
+  /* Hover effect for cards */
+  .oppurtunity-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  /* Title styling for each card */
+  .oppurtunity-card h1 {
+    font-size: 20px;
+    color: #2c3e50; /* Dark blue color */
+    margin-top: 0;
+  }
+  
+  /* Styling for paragraphs in the card */
+  .oppurtunity-card p {
+    margin: 5px 0; /* Margin for spacing */
+    color: #555; /* Grey text color */
+  }
+  
+  /* Button styling */
+  .oppurtunity-card button {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Button hover effect */
+  .oppurtunity-card button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Disabled button styling */
+  .oppurtunity-card button:disabled {
+    background-color: #bdc3c7; /* Grey background for disabled state */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+  }
+  
